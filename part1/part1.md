@@ -46,3 +46,11 @@ const declaration
     - true == 2 will output **false** because true mapped to integer value 1 and that does not equal to 2
     - true === Boolean(2) will output **true** because Boolean conversion will convert 2 to true. 2 is not 0, or an empty string, or null, or undefined, or NaN, so it gets to convert to true. 
 15. A regular equality check `==` does not differentiate 0 from falsebecause operands of different types are converted to numbers by the equality operator `==`. The strict equality opeartor `===` checks the equality without type conversion so when two objects are of different types, using this equality operator will immediately returns false.
+16. [JavaScript file](/part1b-question16.js)
+17. modifyArray([1,2,3], dosomething)
+    - first newArr is created as an empty array
+    - the for loop runs three iterations, during each iterations doSomething() is called with the number in the parameter array as the input. The doSomething() functions double the value and put them into the newArr
+    - After the for loop is finished, newArr is returned.
+    - newArr will have [2,4,6]
+18. [JavaScript file](/part1/part1b-question18.js)
+19. The console will first log 1 and 4 as they are in the function. Then the timer will be set. The console will log 3 first because the timer is set at 0 and then after one second 2 will be logged.
